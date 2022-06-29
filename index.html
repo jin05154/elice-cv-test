@@ -1,60 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>이유민</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">홈</a></li>
-          <li><a href="#cv">이력서</a></li>
-          <li><a href="#education">학력사항</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1 id="cv">이력서</h1>
-      <section id="picture">
-        <h2>이유민</h2>
-        <img src="image/profile.jpg" alt="profile picture" height="300px" />
+
+<head>
+  <title>이유민</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">홈</a></li>
+        <li><a href="#cv">이력서</a></li>
+        <li><a href="#workex">경력사항</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 id="cv">이력서</h1>
+    <section id="picture">
+      <h2>이유민</h2>
+      <img src="image/profile.jpg" alt="profile picture" height="300px" />
+    </section>
+    <div class="grid-container">
+      <section id="personal">
+        <h3>인적사항</h3>
+        <p><strong>생년월일 </strong>1998.10.14</p>
+        <p><strong>주소 </strong>서울특별시 강남구 도곡동</p>
+        <p><strong>연락처 </strong>dorayuminlee@gmail.com | 010-2562-2913</p>
       </section>
-      <div class="grid-container">
-        <section id="personal">
-          <h3>인적사항</h3>
-          <p><strong>생년월일 </strong>1998.10.14</p>
-          <p><strong>주소 </strong>서울특별시 강남구 도곡동</p>
-          <p><strong>연락처 </strong>dorayuminlee@gmail.com | 010-2562-2913</p>
-        </section>
-        <section id="education">
-          <h3>학력사항</h3>
-          <ul>
-            <li>2014.03 ~ 2017.02: 진선여자고등학교 | 서울</li>
-            <li>2017.03 ~ 2022.02: 한국항공대학교 | 경기 | 소프트웨어학과</li>
-          </ul>
-        </section>
-        <section id="workex">
-          <h3>경력사항</h3>
-          <ol>
-            <li>코드클럽 코딩 교육봉사 (4개월)</li>
-            <li>교내 산학 R&D 프로젝트 참여</li>
-            <li>레이시오유한책임회사 | 프론트엔드 개발 아르바이트 (3개월)</li>
-          </ol>
-        </section>
-        <section id="skills">
-          <h3>보유스킬</h3>
-          <ul>
-            <li><a href="https://www.w3schools.com/html/">HTML</a></li>
-            <li><a href="https://www.w3schools.com/css/">CSS</a></li>
-            <li><a href="https://www.w3schools.com/js/">Javascript</a></li>
-            <li><a href="https://reactjs.org/">React</a></li>
-          </ul>
-        </section>
-      </div>
-      <footer>
-        <p>Copyright @ 2022 Yumin Lee.</p>
-      </footer>
-    </main>
-  </body>
+      <section id="education">
+        <h3>학력사항</h3>
+        <div class="grid-edu">
+          <p>진선여자고등학교</p>
+          <p id="period">2014.03 ~ 2017.02</p>
+          <p>한국항공대학교<br />소프트웨어학과 (학사)</p>
+          <p id="period">2017.03 ~ 2022.02</p>
+        </div>
+      </section>
+      <section id="workex">
+        <h3>경력사항</h3>
+        <ol>
+          <li>코드클럽 코딩 교육봉사 (4개월)</li>
+          <li>교내 산학 R&D 프로젝트 참여</li>
+          <li>레이시오유한책임회사 | 프론트엔드 개발 아르바이트 (3개월)</li>
+        </ol>
+      </section>
+      <section id="skills">
+        <h3>보유스킬</h3>
+        <ul>
+          <li>
+            <a href="https://www.w3schools.com/html/">HTML</a>/
+            <a href="https://www.w3schools.com/css/">CSS</a>
+          </li>
+          <li><a href="https://www.w3schools.com/js/">Javascript</a></li>
+          <li><a href="https://reactjs.org/">React</a></li>
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <p>Copyright @ 2022 Yumin Lee.</p>
+    </footer>
+  </main>
+</body>
+
 </html>

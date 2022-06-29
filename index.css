@@ -1,73 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap");
+
 * {
   font-family: "IBM Plex Sans KR", sans-serif;
 }
+
 html {
   display: flex;
   justify-content: center;
 }
+
 body {
-  width: 680px;
+  width: 900px;
 }
-main p {
+
+p {
   padding: 0 5px;
 }
-h1 {
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-#picture h2 {
-  margin-block-start: 0.5em;
-}
-#picture img {
-  height: 250px;
-  border: 1px solid gray;
-}
-header {
-  display: flex;
-  flex-direction: column;
-}
-header ul,
-#education ul {
-  list-style: none;
-  padding: 0 5px;
-}
-header ul {
-  display: flex;
-  flex-direction: row;
-  background-color: #efefef;
-}
-header ul li {
-  padding: 5px;
-}
-#picture {
-  padding: 0 5px;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.grid-container section {
-  padding: 0 5px;
-}
-#workex ol {
-  padding-inline-start: 25px;
-}
-#skills ul {
-  padding-inline-start: 25px;
-}
+
 ul li a {
   text-decoration: none;
   color: black;
 }
+
 ul li a:hover {
   color: pink;
 }
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+header ul {
+  list-style: none;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: row;
+  background-color: #efefef;
+}
+
+header ul li {
+  padding: 5px;
+}
+
+h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 h3 {
   background-color: #fadbd8;
   color: black;
   padding-left: 5px;
 }
+
+#picture {
+  padding: 0 5px;
+}
+
+#picture h2 {
+  margin-block-start: 0.5em;
+}
+
+#picture img {
+  height: 250px;
+  border: 1px solid gray;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-container section {
+  padding: 0 5px;
+}
+
+.grid-edu {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+}
+
+#workex ol {
+  padding-inline-start: 25px;
+}
+
+#skills ul {
+  padding-inline-start: 25px;
+}
+
 footer {
   color: gray;
   font-style: italic;
