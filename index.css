@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap");
 
+/* common */
 * {
+  margin: 0;
+  padding: 0;
   font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+:root {
+  --border-color: #efefef;
+  --subheading-background: #fadbd8;
 }
 
 html {
@@ -10,60 +18,64 @@ html {
 }
 
 body {
-  width: 900px;
-}
-
-p {
-  padding: 0 5px;
-}
-
-ul li a {
-  text-decoration: none;
-  color: black;
-}
-
-ul li a:hover {
-  color: pink;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-}
-
-header ul {
-  list-style: none;
-  padding: 0 5px;
-  display: flex;
-  flex-direction: row;
-  background-color: #efefef;
-}
-
-header ul li {
-  padding: 5px;
-}
-
-h1 {
-  margin-block-start: 0;
-  margin-block-end: 0;
+  width: 100%;
 }
 
 h3 {
-  background-color: #fadbd8;
+  background-color: var(--subheading-background);
   color: black;
-  padding-left: 5px;
+  padding: 2px 0 2px 4px;
 }
 
-#picture {
-  padding: 0 5px;
+p {
+  padding: 4px;
 }
 
-#picture h2 {
-  margin-block-start: 0.5em;
+/* header */
+nav {
+  width: 100%;
 }
 
-#picture img {
-  height: 250px;
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: calc(50% - 450px);
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+nav ul li {
+  padding: 16px 20px 16px 8px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s color;
+}
+
+nav ul li a:hover {
+  color: pink;
+}
+
+/* main */
+main {
+  width: 900px;
+  margin: 0 auto;
+}
+
+#top-name {
+  padding: 4px;
+}
+
+#top-name h2 {
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+}
+
+#top-name img {
+  height: 240px;
   border: 1px solid gray;
 }
 
@@ -73,22 +85,58 @@ h3 {
 }
 
 .grid-container section {
-  padding: 0 5px;
+  height: 150px;
+  padding: 0 4px;
 }
 
-.grid-edu {
+#personal ul {
+  list-style: none;
+  padding: 4px;
+}
+
+#personal ul li {
+  padding: 4px 0;
+}
+
+#email {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s color;
+}
+
+#email:hover {
+  color: pink;
+}
+
+#grid-edu {
   display: grid;
-  grid-template-columns: 5fr 3fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 4px 0;
 }
 
-#workex ol {
-  padding-inline-start: 25px;
+#period {
+  text-align: right;
 }
 
-#skills ul {
-  padding-inline-start: 25px;
+#workex ol, #skills ul {
+  padding: 4px 4px 4px 25px;
 }
 
+#workex ol li, #skills ul li {
+  padding: 4px 0;
+}
+
+#skills ul li a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s color;
+}
+
+#skills ul li a:hover {
+  color: pink;
+}
+
+/* footer */
 footer {
   color: gray;
   font-style: italic;
