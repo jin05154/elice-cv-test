@@ -141,3 +141,51 @@ footer {
   color: gray;
   font-style: italic;
 }
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav ul {
+    padding-left: 4%;
+  }
+
+  main {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .grid-container {
+    width: 80%;
+    display: block;
+  }
+
+  .grid-container section {
+    height: 150px;
+    padding: 0 4px;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.8em;
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  nav ul {
+    padding-left: 4%;
+  }
+
+  main {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .grid-container {
+    display: block;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.8em;
+  }
+}
